@@ -156,7 +156,27 @@
 		width:130%;
 	}
 }
+.round{
+	clip-path: circle();
+	opacity: .7;
+	transition: 2.5s all ease;
 
+}
+.team-name{
+	margin-top: -62px;
+	margin-bottom:23px; 
+	opacity:1;
+}
+.round:hover{
+	opacity: 1;
+	/*border:10px solid orange;*/
+	transition: .3s all ease-in-out;
+}
+
+.round:hover{
+	
+	
+}
 	
 
 
