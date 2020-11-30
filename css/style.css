@@ -2,6 +2,10 @@
 body{
 	overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
 .hidden-thing{
 	position: absolute;
 	left:100%;
@@ -15,14 +19,20 @@ body{
 	font-weight: bold; 
 	letter-spacing: 4px;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 
-@media screen and (max-width: 994px) {
+@media screen and (max-width:900px) {
+	.iframe{
+		position: absolute;
+		left:-40px;
+	}
 	.contact{
 		position: relative;
 		bottom:-281px !important;
+	}
+	footer{
+		position: relative;
+		bottom:-267px;
+
 	}
 }
 	html,body{
