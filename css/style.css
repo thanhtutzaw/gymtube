@@ -2,10 +2,16 @@
 .mont{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold; 
-	
+	letter-spacing: 4px;
 }
 ::-webkit-scrollbar {
     display: none;
+}
+@media screen and (max-width: 994px) {
+	.contact{
+		position: relative;
+		bottom:-281px !important;
+	}
 }
 	html,body{
 		scroll-behavior: smooth;
