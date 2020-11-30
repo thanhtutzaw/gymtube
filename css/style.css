@@ -366,8 +366,16 @@ body{
 }
 
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.viewcount{
 
-
+	position: relative;
+	top:90px;
+	left:5px;
+}
 
 
 
