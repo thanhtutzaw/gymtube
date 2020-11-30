@@ -1,4 +1,15 @@
 /*than css*/
+body{
+	overflow-x: hidden;
+}
+.hidden-thing{
+	position: absolute;
+	left:100%;
+	width:15px;
+	height:15px;
+	opacity: 0;
+
+}
 .mont{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold; 
