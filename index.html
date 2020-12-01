@@ -15,13 +15,14 @@
 	<!--font-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/parallax.min.js"></script>
+<!-- 	<script src="js/scrolltopbutton.js"></script> -->
 	<title>GymTube</title>
 </head>
 <body>
 	<div class="hidden-thing"></div>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">
+	<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">
 		<i class="fas fa-chevron-up"></i>
-	</button>
+	</button> -->
 	<!-- modal	 -->
 			
 			
@@ -36,7 +37,7 @@
 				<a href="#carouselExampleCaptions" class="iconlink"><i class="fas fa-home"></i></li></a>	
 			
 			<li title="Login">
-				<a href="#workout" class="iconlink"><i class="fas fa-sign-in-alt"></i></li></a>	
+				<a href="#signin" class="iconlink"><i class="fas fa-sign-in-alt"></i></li></a>	
 			
 			<li title="Join">
 				<a href="#workout" class="iconlink"><i class="fas fa-user-plus"></i></li></a>
@@ -45,13 +46,13 @@
 				<a href="#workout" class="iconlink"><i class="fas fa-dumbbell"></i></li></a>
 			
 			<li title="Product">
-				<a href="#workout" class="iconlink"><i class="fas fa-box-open"></i></li></a>	
+				<a href="#product" class="iconlink"><i class="fas fa-box-open"></i></li></a>	
 			
 			<li title="Contact">
 				<a href="#contact" class="iconlink"><i class="fas fa-phone"></i></li></a>	
 			
 			<li title="About">
-				<a href="#workout" class="iconlink"><i class="fas fa-question"></i></li></a>
+				<a href="#about" class="iconlink"><i class="fas fa-question"></i></li></a>
 		</ul>
 		</div>
 					<nav id="home" class="navbar navbar-expand-lg navbar-light">
@@ -564,8 +565,8 @@
 <div class="parallax-window" data-parallax="scroll" androidFix="true" data-z-idex="3" data-image-src="images/sule-makaroglu-YFmvjO3TP_s-unsplash(1).jpg">
 	
 	<div class="viewcount text-center pt-5">
-		<h3 class="mont">Page View</h3>
-		<h4>0</h4>
+		<h3 class="mont">Page Views</h3>
+		<h4 id="count">0</h4>
 	</div>
 </div>
 
