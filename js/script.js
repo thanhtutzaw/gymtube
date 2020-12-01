@@ -35,23 +35,36 @@ window.onscroll = function(){
 
 
 
-var mybutton = document.getElementById("myBtn");
+// var mybutton = document.getElementById("myBtn");
 
-window.onscroll = function() {
-	scrollFunction()
+// window.onscroll = function() {
+// 	scrollFunction()
 
-};
+// };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+// count
+const countEl = document.getElementById('count');
+
+updateCount();
+
+function updateCount(){
+	fetch('https://api.countapi.xyz/update/gymtube/website?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	});
 }
