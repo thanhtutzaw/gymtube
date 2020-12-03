@@ -378,6 +378,17 @@ body{
 }
 
 
+.animate{
+	transform: translateY(0px);
+	transition: all 2s ease;
+}
+.animate:hover{
+	transform: translateY(-9px);
+	transition: transform .5s ease-in-out;
+}
+
+
+
 
 
 
