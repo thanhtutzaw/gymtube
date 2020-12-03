@@ -20,11 +20,12 @@ window.onscroll = function(){
 	var top = window.scrollY;
 	// console.log(top);  this make slow to our website IMPORTANT TO REMOVE
 
-	if (top >= 100 ) {
+	if (top >= 910 ) {
 		icon.classList.remove('hide')
 	}else{
 		icon.classList.add('hide')
-	}
+	} 
+	// changed from 100
 }
 
 	// $(window).load(function()
@@ -49,6 +50,7 @@ window.onscroll = function(){
 //     mybutton.style.display = "none";
 //   }
 // }
+// <<<<<<< HEAD
 
 
 // function topFunction() {
@@ -57,14 +59,33 @@ window.onscroll = function(){
 // }
 
 // count
-const countEl = document.getElementById('count');
+// const countEl = document.getElementById('count');
+// =======
+// >>>>>>> 2bc5ce261b19f0ac545b55b8e9830c656645856c
 
-updateCount();
+// updateCount();
 
-function updateCount(){
-	fetch('https://api.countapi.xyz/update/gymtube/website?amount=1')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	});
-}
+// <<<<<<< HEAD
+// =======
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+// count
+// const countEl = document.getElementById('count');
+
+// updateCount();
+
+// >>>>>>> 2bc5ce261b19f0ac545b55b8e9830c656645856c
+// function updateCount(){
+// 	fetch('https://api.countapi.xyz/update/gymtube/website?amount=1')
+// 	.then(res => res.json())
+// 	.then(res => {
+// 		countEl.innerHTML = res.value;
+// 	});
+// <<<<<<< HEAD
+// }
+// =======
+// }
+// >>>>>>> 2bc5ce261b19f0ac545b55b8e9830c656645856c
