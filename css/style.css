@@ -5,7 +5,31 @@ body{
 ::-webkit-scrollbar {
     display: none;
 }
+/*.overlay{
+	margin:0;
+	padding:0;
 
+	background:rgba(0,0,0,0.5);
+}*/
+/*.text-warning{
+	font-color:#FF8800;
+}*/
+.text-warning{
+	color:#FF8800 !important;
+}
+.btn-warning{
+	background-color:#FF8800 !important;
+
+}
+
+.btn-outline-warning:hover{
+	color:black !important;
+	background-color: #FF8800 !important;
+}
+.btn-outline-warning{
+	color: #FF8800 !important;
+	border-color: #FF8800 !important;
+}
 .hidden-thing{
 	position: absolute;
 	left:100%;
@@ -15,6 +39,7 @@ body{
 
 }
 .mont{
+	color:#FF8800 !important;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold; 
 	letter-spacing: 4px;
@@ -79,7 +104,7 @@ body{
 		line-height: 90px;
 		position: fixed;
 		left:0px;
-		z-index: 20;
+		z-index: 30;
 		background: transparent !important;
 		animation-name: animation;
 		animation-duration: 2s;
@@ -135,6 +160,7 @@ body{
 		cursor:default;
 	}
 	.nav-link:hover{
+
 		transition: all .8s ease-out;
 		border:3px solid orange;
 	}
@@ -150,7 +176,7 @@ body{
 		height:50px;
 		width:80px;	
 		margin:auto;
-		bottom:893px;
+		bottom:556px;
 		opacity: 0.4;
 	}
 	.carousel-indicators:hover{
@@ -159,14 +185,14 @@ body{
 	}
 	.carousel-caption{
 		position: absolute;
-		top:50px;
+		top:379px;
 	}
 	.orangetime{
 		font-size:1.6rem;
 		cursor:default;
 		width:100%;
 		height:110px;
-		background-color: orange;
+		background-color: darkorange;
 	}
 	.other{
 		width:100%;
@@ -379,6 +405,7 @@ body{
 
 
 .animate{
+	
 	transform: translateY(0px);
 	transition: all 2s ease;
 }
@@ -386,9 +413,16 @@ body{
 	transform: translateY(-9px);
 	transition: transform .5s ease-in-out;
 }
+.carousel-item-overlay::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	background:rgba(0,0,0,0.2);
 
-
-
-
+}
 
 
