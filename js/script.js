@@ -89,3 +89,17 @@ window.onscroll = function(){
 // =======
 // }
 // >>>>>>> 2bc5ce261b19f0ac545b55b8e9830c656645856c
+// count
+const countEl = document.getElementById('count');
+
+updateCount();
+
+
+function updateCount(){
+	fetch('https://api.countapi.xyz/update/gymtube/website?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	});
+
+}
