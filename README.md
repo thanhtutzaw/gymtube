@@ -1,6 +1,6 @@
 # Gymtube Online Fitness
 This project was developed by Metro students.<br>
-https://thanhtutzaw.github.io/gymtube/
+
 
 ### Team Members 
 - Than Htut Zaw (Team Leader) <br><br>
